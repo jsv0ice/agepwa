@@ -1,0 +1,160 @@
+// Import the react-bootstrap scss file
+@import "~bootstrap/scss/bootstrap";
+
+// Define your custom variables
+$primary: #58504A;
+$secondary: #57A773;
+$success: #57A773;
+$info: #7A89C2;
+$warning: #C17817;
+$danger: #F25757;
+$light: #DDD5D0;
+$dark: #58504A;
+
+// Override the default variables with your custom variables
+$primary: $primary !default;
+$secondary: $secondary !default;
+$success: $success !default;
+$info: $info !default;
+$warning: $warning !default;
+$danger: $danger !default;
+$light: $light !default;
+$dark: $dark !default;
+
+body {
+    background-color: $dark;
+    color: $light;
+}
+.btn {
+    color: $light;
+    background-color: $primary;
+    border-color: $light;
+  
+    &:hover {
+      color: $light;
+      background-color: darken($primary, 10%);
+      border-color: darken($primary, 10%);
+    }
+  
+    &.btn-secondary {
+      color: $light;
+      background-color: $secondary;
+      border-color: $secondary;
+  
+      &:hover {
+        color: $light;
+        background-color: darken($secondary, 10%);
+        border-color: darken($secondary, 10%);
+      }
+    }
+
+    &.btn-success {
+      color: $light;
+      background-color: $success;
+      border-color: $success;
+  
+      &:hover {
+        color: $light;
+        background-color: darken($success, 10%);
+        border-color: darken($success, 10%);
+      }
+    }
+
+    &.btn-info {
+      color: $light;
+      background-color: $info;
+      border-color: $info;
+  
+      &:hover {
+        color: $light;
+        background-color: darken($info, 10%);
+        border-color: darken($info, 10%);
+      }
+    }
+
+    &.btn-warning {
+      color: $light;
+      background-color: $warning;
+      border-color: $warning;
+  
+      &:hover {
+        color: $light;
+        background-color: darken($warning, 10%);
+        border-color: darken($warning, 10%);
+      }
+    }
+
+    &.btn-danger {
+      color: $light;
+      background-color: $danger;
+      border-color: $danger;
+  
+      &:hover {
+        color: $light;
+        background-color: darken($danger, 10%);
+        border-color: darken($danger, 10%);
+      }
+    }
+
+    &.btn-light {
+      color: $dark;
+      background-color: $light;
+      border-color: $light;
+  
+      &:hover {
+        color: $dark;
+        background-color: darken($light, 10%);
+        border-color: darken($light, 10%);
+      }
+    }
+
+    &.btn-dark {
+      color: $light;
+      background-color: $dark;
+      border-color: $dark;
+  
+      &:hover {
+        color: $light;
+        background-color: darken($dark, 10%);
+        border-color: darken($dark, 10%);
+      }
+    }
+}
+
+.modal-content {
+    background-color: $light;
+    border-color: $primary;
+}
+
+.modal-header {
+    background-color: $light;
+    color: $primary;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-footer {
+    background-color: $primary;
+    color: $light;
+}
+
+.modal-title {
+    color: $light;
+}
+
+.card {
+    background-color: $light;
+    border-color: $primary;
+    color: $dark;
+}
+
+.card-header {
+    background-color: $primary;
+    color: $light;
+}
+
+.card-footer {
+    background-color: $primary;
+    color: $light;
+}
+  
